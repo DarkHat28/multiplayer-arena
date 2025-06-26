@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=4 uid="uid://c5agow2cecj8v"]
 
 [ext_resource type="Texture2D" uid="uid://b78xw2o4ms3uk" path="res://tileset.png" id="1_0mmdn"]
-[ext_resource type="Script" path="res://game.gd" id="1_qdjc2"]
+[ext_resource type="Script" uid="uid://c78gbf7rgjeiw" path="res://game.gd" id="1_qdjc2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wwohc"]
 texture = ExtResource("1_0mmdn")
@@ -75,7 +75,7 @@ layout_mode = 2
 text = "Join"
 
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
-_spawnable_scenes = PackedStringArray("res://player/player.tscn")
+_spawnable_scenes = PackedStringArray("uid://ccp7a5trw734p")
 spawn_path = NodePath("..")
 
 [connection signal="pressed" from="UI/Multiplayer/VBoxContainer/Host" to="." method="_on_host_pressed"]

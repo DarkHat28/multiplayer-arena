@@ -12,11 +12,13 @@ config_version=5
 
 config/name="Multiplayer Arena Shooter"
 run/main_scene="res://game.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=720
+window/size/viewport_height=360
 window/stretch/mode="viewport"
 
 [dotnet]
@@ -50,4 +52,6 @@ shoot={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
 environment/defaults/default_clear_color=Color(0, 0, 0, 1)
